@@ -1,0 +1,76 @@
+
+import javax.swing.event.*;
+import javax.swing.*;
+import java.awt.event.*;
+import java.awt.Font;
+import java.util.*;
+import java.io.*;
+public class Declaration{
+	FileWriter fw;
+	FileReader fr;
+	BufferedReader br;
+	String aWD;
+	static int countChecking=0;
+	Boolean isModified=false;
+	
+	Icon ic=new ImageIcon("Icon/2.gif");
+	JLabel pic=new JLabel(ic);
+	
+	JList listword=new JList();
+	JTextArea listdefini=new JTextArea();
+	JTextField txtword=new JTextField();
+	JTextArea txtgetViewWord = new JTextArea();
+	JTextArea txtgetViewDefe = new JTextArea();
+	JMenu mFile=new JMenu("File");
+	JMenuItem m_Exit=new JMenuItem("Exit",new ImageIcon("Icon/Exit1.png"));
+	JMenu mEdit=new JMenu("Edit");
+	JMenuItem m_NewWord=new JMenuItem("New Word",new ImageIcon("Icon/document_add.png"));
+
+	
+	JMenuItem m_Copy=new JMenuItem("Copy");
+	Vector<String> vWord=new Vector<String>();
+	Vector<String> vDefini=new Vector<String>();
+	Vector<String> vViewWord=new Vector<String>();
+	Vector<String> vViewDefe=new Vector<String>();
+	
+	JMenuItem m_Paste=new JMenuItem("Paste");
+	JMenu mView=new JMenu("View");
+	JMenuItem m_Checked_Word=new JMenuItem("History",new ImageIcon("Icon/View.png"));
+	JMenu mHelp=new JMenu("Help");
+	JMenuItem m_aboutus=new JMenuItem("About Us",new ImageIcon("Icon/aboutUs.png"));
+	JMenuItem m_HelpFile=new JMenuItem("Help File");
+	
+	//set picture on button
+	Icon pPrevious=new ImageIcon("Icon/view_previous.png");
+	Icon pNext=new ImageIcon("Icon/view_next.png");
+	Icon pExit=new ImageIcon("Icon/Exit1.png");
+	Icon pNew=new ImageIcon("Icon/document_add.png");
+	Icon pCopy=new ImageIcon("Icon/copy.png");
+	Icon pPaste=new ImageIcon("Icon/paste.png");
+	Icon pCheckedW=new ImageIcon("Icon/View.png");
+	Icon pabout=new ImageIcon("Icon/aboutUs.png");
+	Icon phelp=new ImageIcon("Icon/help2.png");
+	Icon plogon=new ImageIcon("Icon/Logon.png");
+	String str="6573-2398-4357-5678";
+
+	//button on help file
+	JButton cmdExit=new JButton(pExit);
+	JButton cmdNewWord=new JButton(pNew);
+	JButton cmdCopy=new JButton(pCopy);
+	JButton cmdPaste=new JButton(pPaste);
+	JButton cmdCheckedW=new JButton(pCheckedW);
+	JButton cmdabout=new JButton(pabout);
+	JButton cmdhelp=new JButton(phelp);
+	JButton cmdLogon=new JButton(plogon);
+	JButton cmdAddtoView=new JButton("Add To View");
+	///Button//////
+	JButton cmdPrevious=new JButton(pPrevious);
+	JButton cmdNext=new JButton(pNext);	
+	JLabel lblword=new JLabel();
+	JLabel lblcopy=new JLabel("Dictionary Java v 1.6");
+	JLabel lblcopy1=new JLabel("Dictionary Text Copyright");
+	JLabel lblcopy2=new JLabel("Mr.Arun Sharma 2012");
+	JLabel lblcopy3=new JLabel("Email: arun.prashar@yahoo.in");
+	final long max_word=10000;
+
+}
